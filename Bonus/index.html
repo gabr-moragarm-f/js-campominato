@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <select class="select-difficulty" name="difficulty">
+      <option value="0">Difficolt&agrave; 0</option>
+
+      <option value="1">Difficolt&agrave; 1</option>
+
+      <option value="2">Difficolt&agrave; 2</option>
+    </select>
+
+    <button type="button" name="button">Gioca!</button>
+
+    <button type="button" name="button">Opzioni avanzate per la scelta della difficoltà</button>
+
+    <div class="advanced-select-difficulty">
+      <label for="min-total-numbers">Scegli il minimo da cui partono i numeri</label>
+      <input type="range" name="min-total-numbers" min="1" max="100">
+
+      <label for="max-total-numbers">Scegli il massimo a cui possono arrivare i numeri</label>
+      <input type="range" name="max-total-numbers" min="2" max="200">
+
+      <label for="max-explosives">Scegli il numero di bombe</label>
+      <input type="range" name="max-explosives">
+    </div>
+
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
