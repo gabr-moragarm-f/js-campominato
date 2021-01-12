@@ -17,15 +17,24 @@
 
     <button type="button" name="button">Opzioni avanzate per la scelta della difficoltà</button>
 
-    <div class="advanced-select-difficulty">
-      <label for="min-total-numbers">Scegli il minimo da cui partono i numeri</label>
-      <input type="range" name="min-total-numbers" min="1" max="100">
+    <div class="advanced-settings-box" style="display:none;"> <!-- Sono pigro -->
+      <div class="range-box">
+        <label for="max-total-numbers">Scegli il massimo a cui possono arrivare i numeri</label>
 
-      <label for="max-total-numbers">Scegli il massimo a cui possono arrivare i numeri</label>
-      <input type="range" name="max-total-numbers" min="2" max="200">
+        <input type="range" name="max-total-numbers" value="100" min="2" max="200">
 
-      <label for="max-explosives">Scegli il numero di bombe</label>
-      <input type="range" name="max-explosives">
+        <span></span>
+      </div>
+
+      <div class="range-box">
+        <label for="max-explosives">Scegli il numero di bombe</label>
+
+        <input type="range" name="max-explosives" value="16" min="1">
+
+        <span></span>
+      </div>
+
+      <button type="button" name="button">Gioca!</button>
     </div>
 
     <script src="js/script.js" charset="utf-8"></script>
